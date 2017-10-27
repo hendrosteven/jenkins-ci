@@ -34,7 +34,7 @@ public class DemoJpaApplicationTests {
 		ResponseEntity<ArrayList> entity = this.testRestTemplate
 				.getForEntity("http://localhost:"+this.port+"/category",
 						ArrayList.class);
-		Assert.assertEquals(HttpStatus.OK, entity.getStatusCode());
+		Assert.assertEquals(HttpStatus.BAD_REQUEST, entity.getStatusCode());
 	}
 
 
